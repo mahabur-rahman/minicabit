@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="img/heroImg.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- title-->
+    <title> Minicabit booking journey </title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+
+    <!-- section header start-->
+    <header id="header">
+        <div class="section-header-center container row">
+            <div class="brand-name">
+                <a href="#"><img src="img/Strapline.png" class="brand-logo-image" alt="" /> </a>
+            </div>
+            <div class="row menuItems-container">
+                <ul class="ul-menuitems">
+                    <li><a href="#">Help</a></li>
+                    <li class="dropdown d-none">
+                        <a href="#" class="dropbtn">Popular Destination </a>
+                        <div class="dropdown-content">
+                            <div class="container row row-dropdown-content">
+                                <div class="part-1">
+                                    <h4>BOOK A CAB UK WIDE:</h4>
+                                    <ul class="ul-dropdown">
+                                        <li><a href="#">London Taxi</a></li>
+                                        <li><a href="#">Edinburgh Taxi</a></li>
+                                        <li><a href="#">Glasgow Taxi</a></li>
+                                        <li><a href="#">Oxford Taxi</a></li>
+                                        <li><a href="#">Aberdeen Taxi</a></li>
+                                        <li><a href="#">Bristol Taxi</a></li>
+                                        <li><a href="#">York Taxi</a></li>
+                                        <li><a href="#">Leeds Taxi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="part-2">
+                                    <h4>Airport Transfers:</h4>
+                                    <ul class="ul-dropdown">
+                                        <li><a href="#">Heathrow Airport Taxi</a></li>
+                                        <li><a href="#">Gatwick Airport Taxi</a></li>
+                                        <li><a href="#">Stansted Airport Taxi</a></li>
+                                        <li><a href="#">Luton Airport Taxi</a></li>
+                                        <li><a href="#">London City Airport Taxi</a></li>
+                                        <li><a href="#">Manchester Airport Taxi</a></li>
+                                        <li><a href="#">Edinburgh Airport Taxi</a></li>
+                                        <li><a href="#">Glasgow Airport Taxi</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="part-3">
+                                    <h4>Train Station Transfers:</h4>
+                                    <ul class="ul-dropdown">
+                                        <li><a href="#">London Taxi</a></li>
+                                        <li><a href="#">Edinburgh Taxi</a></li>
+                                        <li><a href="#">Glasgow Taxi</a></li>
+                                        <li><a href="#">Oxford Taxi</a></li>
+                                        <li><a href="#">Aberdeen Taxi</a></li>
+                                        <li><a href="#">Bristol Taxi</a></li>
+                                        <li><a href="#">York Taxi</a></li>
+                                        <li><a href="#">Leeds Taxi</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Business account</a></li>
+                    <li><a href="#">Operator signup</a></li>
+                </ul>
+                <div class="navbar-btns">
+                    <button class="btn btn-header-sign-up">Sign up</button>
+                    <button class="btn btn-header-log-in mobile">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section header end -->
+    <!-- section hero start -->
+    <section id="heroSection">
+        <div class="container container-hero">
+            <div class="row row-hero">
+                <div class="hero-col-1">
+                    <div class="search-input input-parent row">
+                        <span class="input-fild-name">From:</span>
+                        <input type="text" placeholder="Enter pickup postcode, venue or place">
+                        <span class="icon-cross">
+                     <img src="img/icons/Clear.svg" alt="Clear Icon">
+                   </span>
+                    </div>
+                    <div class="via row">
+                        <div class="via-content row">
+                            <span class="icon-via">
+                      <img src="img/icons/Plus.svg" class="via-icon-plus" alt="plus">
+                     </span>
+                            <div class="text-via">Via</div>
+                        </div>
+                        <img src="img/icons/Reverse.svg" class="via-icon-right" alt="Reverse">
+                    </div>
+                    <div class="row via-input-field input-parent">
+                        <span class="input-fild-name">Via:</span>
+                        <input type="text" placeholder="Camden Town - Underground Tube Station">
+                        <span class="icon-cross">
+                    <img src="img/icons/Clear.svg" alt="Clear Image">
+                  </span>
+                    </div>
+                    <div class="to-input input-parent row">
+                        <span class="input-fild-name">To:</span>
+                        <input type="text" placeholder="Camden Town - Underground Tube Station">
+                        <span class="icon-cross">
+                    <img src="img/icons/Clear.svg" alt="Clear Image">
+                  </span>
+                    </div>
+                    <hr class="hr-form">
+                    <!-- 1st radio button start -->
+                    <form>
+                        <p>
+                            <input type="radio" id="test1" name="radio-group" checked autofocus>
+                            <label for="test1" class="input-text">One way</label>
+                        </p>
+
+                        <div class="date-time">
+                            <input type="date" value="date" class="date">
+                            <select id="number" name="numberList" form="numberForm" class="select-number">
+                               <option value="num0">00</option>
+                               <option value="num1">01</option>
+                               <option value="num2">02</option>
+                               <option value="num3">03</option>
+                               <option value="num4">04</option>
+                               <option value="num5">05</option>
+                               <option value="num6">06</option>
+                               <option value="num7">07</option>
+                               <option value="num8">08</option>
+                               <option value="num9">09</option>
+                               <option value="num10">10</option>
+                               <option value="num11">11</option>
+                               <option value="num12">12</option>
+                               <option value="num13">13</option>
+                               <option value="num14">14</option>
+                               <option value="num15">15</option>
+                               <option value="num16">16</option>
+                               <option value="num17">17</option>
+                               <option value="num18" selected>18</option>
+                               <option value="num19">19</option>
+                               <option value="num20">20</option>
+                               <option value="num12">21</option>
+                               <option value="num22">22</option>
+                               <option value="num23">23</option>
+                           
+                            </select>
+                            <span class="dot-color">:</span>
+                            <select id="numbers" name="numbersList" form="numbersList" class="select-number">
+                               <option value="zero" selected>00</option>
+                               <option value="saab">10</option>
+                               <option value="opel">20</option>
+                               <option value="audi">30</option>
+                               <option value="audi">40</option>
+                               <option value="audi">50</option>
+                            </select>
+                        </div>
+
+                    </form>
+                    <!-- second radio button end  -->
+                    <!-- 2nd radio button start -->
+                    <form class="second-radio-btn">
+                        <p>
+                            <input type="radio" id="test2" name="radio-group" checked>
+                            <label for="test2" class="input-text">Return</label>
+                        </p>
+
+                        <div class="date-time">
+                            <input type="date" value="date" class="date second-date">
+                            <select id="number" name="numberList" form="numberForm" class="select-number second-date cursor-not-allow">
+                               <option value="num0">00</option>
+                               <option value="num1">01</option>
+                               <option value="num2">02</option>
+                               <option value="num3">03</option>
+                               <option value="num4">04</option>
+                               <option value="num5">05</option>
+                               <option value="num6">06</option>
+                               <option value="num7">07</option>
+                               <option value="num8">08</option>
+                               <option value="num9">09</option>
+                               <option value="num10">10</option>
+                               <option value="num11">11</option>
+                               <option value="num12">12</option>
+                               <option value="num13">13</option>
+                               <option value="num14">14</option>
+                               <option value="num15">15</option>
+                               <option value="num16">16</option>
+                               <option value="num17">17</option>
+                               <option value="num18" selected>18</option>
+                               <option value="num19">19</option>
+                               <option value="num20">20</option>
+                               <option value="num12">21</option>
+                               <option value="num22">22</option>
+                               <option value="num23">23</option>
+                           
+                            </select>
+                            <span class="dot-color second-date">:</span>
+                            <select id="numbers" name="numbersList" form="numbersList" class="select-number second-date cursor-not-allow">
+                               <option value="zero" selected>00</option>
+                               <option value="num10">10</option>
+                               <option value="num20">20</option>
+                               <option value="num30">30</option>
+                               <option value="num40">40</option>
+                               <option value="num50">50</option>
+                            </select>
+                        </div>
+
+                    </form>
+                    <!-- 2nd radio button end  -->
+
+                    <hr class="hr-form">
+                    <!-- passenger and language select start -->
+
+                    <div class="passengers">
+                        <div class="date-timed booking-select">
+                            <p>Passengers </p>
+                            <select id="number" name="numberList" form="numberForm" class="select-number select-margin">
+                               <option value="num1" selected>1</option>
+                               <option value="num2">2</option>
+                               <option value="num3">3</option>
+                               <option value="num4">4</option>
+                               <option value="num5">5</option>
+                               <option value="num6">6</option>
+                               <option value="num7">7</option>
+                               <option value="num8">8</option>
+                               <option value="num9">9</option>
+                               <option value="num10">10</option>
+                               <option value="num11">11</option>
+                               <option value="num12">12</option>
+                               <option value="num13">13</option>
+                               <option value="num14">14</option>
+                               <option value="num15">15</option>
+                               <option value="num16">16</option>
+                           
+                            </select>
+                            <p>Luggage </p>
+                            <select id="numbers" name="numbersList" form="numbersList" class="select-number luggage-select luggage-m">
+                               <option value="none" selected> None</option>
+                               <option value="luggage"><span>+ </span> Luggage</option>
+                               <option value="boxes"><span>+ </span>Boxes</option>
+                               <option value="child"><span>+ </span> Child items</option>
+                               <option value="wheelchair"><span>+ </span> Folded wheelchair</option>
+                               <option value="household"> <span>+ </span>Household items</option>
+                               <option value="pets"><span>+ </span>Pets</option>
+                            </select>
+                        </div>
+                        <!-- button -->
+                        <div class="get-btn">
+                            <button type="button">Get quotes</button>
+                        </div>
+
+                    </div>
+
+                    <!-- passenger and language select end-->
+                </div>
+                <div class="hero-col-2">
+                    <div class="hero-content">
+                        <h2>Your UK Taxi and Cab Network</h2>
+                        <h3>Get the best price on a minicab or taxi by comparing cabs across 550 towns and cities nationwide.</h3>
+                        <p class="hero-text-m">
+                            Our marketplace presents licensed providers of standard, Executive and Zero Emission cabs today, with ‘robotaxis’ coming in the future! </p>
+                        <p>Whether you need a private taxi to London, cheap cab rides to and from town or a 7-seater taxi, you’ll save money, time and effort by comparing and booking minicab and taxi quotes online at minicabit, compared to dialling local
+                            taxi numbers to get fares.</p>
+
+                        <a href="#" target="_blank">
+                            <div class="hero-content-img">
+                                <img src="img/heroImg.png" alt="Hero Image">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section hero end -->
+
+
+    <!-- Box slider section start  -->
+    <section id="boxSlider">
+        <div class="container box-card">
+            <div class="star-box">
+                <div class="item">
+                    <div class="star-line">
+                        <div class="icon">
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <div class="comment-hours">
+                            <p>6 hours ago</p>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="box-title">
+                        <h5>Prompt hassle free journey</h5>
+                        <p>Prompt hassle free journey. Driver arrived on time and took us directly to our destin...</p>
+                        <p class="name">Robert Redmond</p>
+                    </a>
+                </div>
+            </div>
+            <div class="star-box">
+                <div class="item">
+                    <div class="star-line">
+                        <div class="icon">
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <div class="comment-hours">
+                            <p>13 hours ago</p>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="box-title">
+                        <h5>Great driver</h5>
+                        <p class="second-text-m">Great driver, on time and comfortable ride</p>
+                        <p class="name">David</p>
+                    </a>
+                </div>
+            </div>
+            <div class="star-box">
+                <div class="item">
+                    <div class="star-line">
+                        <div class="icon">
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <div class="comment-hours">
+                            <p>1 day ago</p>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="box-title">
+                        <h5>Excellent prompt courteous ...</h5>
+                        <p>Excellent prompt courteous service.</p>
+                        <p class="name name-m">Malcolm and Lynn Potter</p>
+                    </a>
+                </div>
+            </div>
+            <div class="star-box d-none">
+                <div class="item">
+                    <div class="star-line">
+                        <div class="icon">
+                            <span class="customer-icon-bg"><i class="far fa-star"></i></span>
+                            <span class="customer-icon-bg"><i class="far fa-star"></i></span>
+                            <span class="customer-icon-bg"><i class="far fa-star"></i></span>
+                            <span class="customer-icon-bg"><i class="far fa-star"></i></span>
+                            <span class="customer-bg"><i class="far fa-star"></i></span>
+                        </div>
+                        <div class="comment-hours">
+                            <p>1 day ago</p>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="box-title">
+                        <h5>On time</h5>
+                        <p class="customer-review-m">On time, right route, no fuss</p>
+                        <p class="name">Customer</p>
+                    </a>
+                </div>
+            </div>
+            <!-- arrow  -->
+            <div class="left-arrow">
+                <span class="left-angle">
+                        <i class="fas fa-angle-left"></i>
+                 </span>
+            </div>
+            <div class="right-arrow">
+                <span class="right-angle">
+                        <i class="fas fa-angle-right"></i>
+                 </span>
+            </div>
+            <!-- end of arrow -->
+        </div>
+        <!-- review text -->
+
+        <div class="review-text text-center">
+            <p>Rated <strong>4.6</strong> / based on <a href="#" class="text-underline">6980 reviews.</a> Showing our 4 & 5 star reviews.</p>
+
+            <a href="#" class="review-bottom-text"> <span class="review-bg-text"></span> <span class="star-with-text">Trustpilot</span></a>
+        </div>
+        <!-- progress bar image -->
+        <div class="container">
+            <div class="progressbar-img">
+                <img src="img/Progress+bar.png" alt="Progress bar">
+            </div>
+            <hr class="hr-form">
+        </div>
+
+
+    </section>
+    <!-- Box slider section end -->
+
+
+
+    <!-- car types section start  -->
+    <section id="carTypes">
+        <div class="container">
+            <div class="car-title">
+                <h2 class="text-center">Car types available</h2>
+            </div>
+            <div class="car-main-div">
+                <div class="car-item">
+                    <div class="car-img">
+                        <img src="img/car1.svg" alt="">
+                    </div>
+                    <div class="car-text">
+                        <h6>Saloon</h6>
+                        <p>Toyota Prius, VW Passat or similar</p>
+                    </div>
+                </div>
+                <div class="car-item second-item">
+                    <div class="car-img">
+                        <img src="img/car2.svg" alt="">
+                    </div>
+                    <div class="car-text car-text-2">
+                        <h6>Estate</h6>
+                        <p>VW Passat, Hyundai or similar</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="car-img">
+                        <img src="img/car3.svg" alt="">
+                    </div>
+                    <div class="car-text">
+                        <h6>MPV</h6>
+                        <p>Ford Galaxy, VW Sharan or similar</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="car-img">
+                        <img src="img/car4.svg" alt="">
+                    </div>
+                    <div class="car-text">
+                        <h6 class="mt-3">Executive</h6>
+                        <p class="executive">E class Mercedes, BMW 5 series or similar</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="car-img">
+                        <img src="img/car5.svg" alt="">
+                    </div>
+                    <div class="car-text">
+                        <h6>8 seater</h6>
+                        <p class="executive">Mercedes Viano, Renault Traffic or similar</p>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="hr-form" />
+        </div>
+    </section>
+    <!-- car types section end -->
+
+
+    <!-- make sure part start -->
+    <section id="makeSure">
+        <div class="container">
+            <h2 class="text-center">Make sure you’re not paying more than you have to when you travel.</h2>
+            <p class="first-p">Taxis and minicabs are the best way to get to your destination since they take you door to door, significantly reducing the effort of switching between different modes of transport, queuing up, and wondering where you put your ticket.</p>
+            <p class="first-p">Travelling by private hire taxi takes the stress out of your travel and could even result in a faster journey compared to getting the train or bus. If you’re travelling in a group, we have 6-seater taxi and 7-seater taxi options available,
+                which could even work out cheaper than getting public transport, on top of being hassle-free in comparison. For example, it works out cheaper to opt for 8-seater taxi hire rather than the train if you’re travelling from Birmingham to London
+                on the train.</p>
+            <!-- hr -->
+            <hr class="hr-form" />
+        </div>
+    </section>
+    <!-- make sure part end -->
+
+
+    <!-- widget section start -->
+    <section id="widget">
+        <div class="container">
+            <div class="widget-main">
+                <div class="widget-item">
+                    <h2>
+                        Comparing & booking minicab & taxi quotes online will save you time and effort vs. if you dial local taxi numbers to gather cab fares on the telephone.
+                    </h2>
+                    <p>
+                        As taxis & mini-cab rides take you door to door, it greatly reduces the effort of switching between multiple modes of transport, taking the stress out of your travel and often resulting in a faster journey. Mini-cabs can also work out cheaper than the
+                        train or coach, especially when travelling in a group. For example a Central Birmingham taxi to London Heathrow airport is cheaper per person for a 7 seater taxi, than it is to get the train.
+                    </p>
+                </div>
+                <div class="widget-item my-4">
+                    <h2>
+                        minicabit calculates fares from mini-cab companies across Great Britain, enabling you to compare real-time online taxi quotes pre-set by the companies.
+                    </h2>
+                    <p>
+                        This UK-wide network ensures you get the best deal as the lowest minicab quote may not always be the local taxi company near you. For example it is often cheaper for a quiet firm outside the city centre to come into town to pick you up and drop you near
+                        their base than it is for a busier cab company in the city.
+                    </p>
+                </div>
+                <div class="widget-item">
+                    <h2>
+                        minicabit compares professional, licensed taxi cab companies (known as Private Hire Operators). With minicabit, you can book Executive car mini-cabs, hybrid mini-cabs as well as taxis for up to 8 passengers via Web, iOS and Android.
+                    </h2>
+                    <p>
+                        By adding a request in the 'Additional information' field, you can also receive a mini-cab with a child seat or wheelchair access. All airport taxis & mini-cabs, as well as airport transfers in the uk, booked with minicabit include the airport's 'meet
+                        and greet' charges, so your taxi driver meets you in arrivals. If you have any more questions, just Contact Us.
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-form" />
+        </div>
+    </section>
+    <!-- widget section end -->
+
+    <!-- official booking section start -->
+    <section id="booking">
+        <div class="container">
+            <div class="booking-main">
+                <div class="booking-title">
+                    <h3>Official booking partner for:</h3>
+                </div>
+                <div class="booking-img">
+                    <span> <img src="img/company1.png" alt="Booking"></span>
+                    <span> <img src="img/company2.png" alt="Booking"></span>
+                    <span> <img src="img/company3.png" alt="Booking"></span>
+                    <span> <img src="img/company4.png" alt="Booking"></span>
+                    <span> <img src="img/company5.png" alt="Booking"></span>
+
+                </div>
+            </div>
+            <div class="booking-main">
+                <div class="booking-title">
+                    <h3>In the media:</h3>
+                </div>
+                <div class="booking-img">
+                    <span> <img src="img/company7.png" alt="Booking"></span>
+                    <span> <img src="img/company8.png" alt="Booking"></span>
+                    <span> <img src="img/company9.png" alt="Booking"></span>
+                    <span> <img src="img/company10.png" alt="Booking"></span>
+                    <span> <img src="img/company11.png" alt="Booking"></span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- official booking section end -->
+
+
+    <!-- footer top start -->
+    <section id="footerTop">
+        <div class="container">
+            <div class="footer-main">
+                <!-- footer left -->
+                <div class="footer-left-main">
+                    <div class="first-list-items">
+                        <h6>Airport Transfers :</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Heathrow Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Gatwick Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Stansted Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Luton Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">London City Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Manchester Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Edinburgh Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Glasgow Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Birmingham Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Liverpool Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">East Midlands Airport Taxi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="second-list-items">
+                        <h6>Train Station Transfers :</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Victoria Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Paddington Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Reading Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Birmingham New Street Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Manchester Piccadilly Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Charing Cross Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Kings Cross Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Stratford Station Taxi </a>
+                            </li>
+                            <li>
+                                <a href="#">London Bridge Station Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Euston Station Taxi</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer middle -->
+                <div class="footer-middle-main">
+                    <div class="first-list-items top-m">
+                        <h6>Book a Cab UK wide :</h6>
+                        <ul class="first-m">
+                            <li>
+                                <a href="#">London Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Edinburgh Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Stansted Airport Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Cardiff Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Oxford Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Reading Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Nottingham Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Leeds Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Bristol Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Glasgow Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Manchester Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Birmingham Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Liverpool Taxi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="second-list-items">
+                        <ul class="second-m">
+                            <li>
+                                <a href="#">York Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Southampton Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Sheffield Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Norwich Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Aberdeen Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Leicester Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Coventry Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Leicestershire Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Newcastle Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Doncaster Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Guildford Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Bath Taxi</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="third-list-items">
+                        <ul class="third-m">
+                            <li>
+                                <a href="#">Plymouth Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Preston Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Cambridge Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Lincoln Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Hull Taxi</a>
+                            </li>
+                            <li>
+                                <a href="#">Bournemouth Taxi</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer right -->
+                <div class="footer-right-main">
+                    <div class="right-list-items">
+                        <h6>Let us help you :</h6>
+                        <ul class="first-m">
+                            <li>
+                                <a href="#">Dial a Cab</a>
+                            </li>
+                            <li>
+                                <a href="#">Taxi Fare Calculator</a>
+                            </li>
+                            <li>
+                                <a href="#">Student Discount</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer top end -->
+
+    <!-- footer section start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- footer left -->
+                <div class="footer-left">
+                    <div class="lists">
+                        <ul>
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">Site map</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">www.minicabit.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p> &copy; 2021-<a href="#"> minicabit.com.</a> All rights reserved.</p>
+                    </div>
+                    <div class="img-main mt">
+                        <div class="together">
+                            <span class="text">Together with</span><img src="img/02.svg" alt="Together with O2" width="55" height="61">
+                        </div>
+                        <div class="business-img">
+                            <a href="#">
+                                <img src="img/footerImg.jpg" alt="Business">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer right -->
+                <div class="footer-right">
+                    <div class="social-img">
+                        <a href="#">
+                            <img src="img/facebook-logo.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="mx">
+                            <img src="img/twitter-logo.svg" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="img/blog-logo.svg" alt="blog">
+                        </a>
+                    </div>
+                    <div class="visa-img">
+                        <img src="img/Payment+bar2.jpg" alt="Payment">
+                    </div>
+                    <div class="secure">
+                        <img src="img/positiveSSL.png" alt="SSL">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

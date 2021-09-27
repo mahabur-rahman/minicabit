@@ -1,0 +1,470 @@
+// ========== 3600px ==========
+@media (max-width: 3600px) {
+    // box slider arrow 
+    #boxSlider .left-arrow span,
+    #boxSlider .right-arrow span {
+        left: 23%;
+    }
+    #boxSlider .right-arrow span {
+        right: -29%;
+    }
+}
+
+// ========== 1500px ==========
+@media (max-width: 1500px) {
+    // box slider arrow 
+    #boxSlider .left-arrow span,
+    #boxSlider .right-arrow span {
+        left: 12%;
+    }
+    #boxSlider .right-arrow span {
+        right: -62%;
+    }
+}
+
+// ========== 1450px ==========
+@media (max-width: 1450px) {
+    // box slider arrow 
+    #boxSlider .right-arrow span {
+        right: -69%;
+    }
+    #boxSlider .left-arrow span,
+    #boxSlider .right-arrow span {
+        left: 9.5%;
+    }
+}
+
+// ========== 1400px ==========
+@media (max-width: 1400px) {
+    // box slider arrow 
+    #boxSlider .right-arrow span,
+    #boxSlider .left-arrow span {
+        display: none;
+    }
+}
+
+// ========== 1200px ==========
+@media (max-width: 1200px) {
+    // header 
+    #header .row-dropdown-content {
+        justify-content: space-around;
+    }
+}
+
+// ========== 1199px ==========
+@media (max-width: 1199px) {
+    // header 
+    #header {
+        .container {
+            width: 960px;
+        }
+    }
+    // hero section 
+    #heroSection .container-hero .hero-col-1 {
+        margin-left: 23px;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content h2 {
+        font-size: 23px;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content h3 {
+        font-size: 16px;
+    }
+    #heroSection .container-hero .hero-col-1 {
+        width: 38%;
+    }
+    #heroSection .container-hero .hero-col-2 {
+        margin-left: 35px;
+    }
+    #heroSection .hero-content {
+        margin-right: 13em;
+    }
+    // box slider 
+    #boxSlider .container {
+        max-width: 100%;
+    }
+    #boxSlider .box-card {
+        justify-content: center;
+    }
+    #boxSlider .star-box {
+        margin: 6px;
+        padding: 11px;
+    }
+    #boxSlider .box-title .name-m {
+        margin-top: 32px;
+    }
+    // progress img 
+    #boxSlider .progressbar-img img,
+    #boxSlider .hr-form {
+        max-width: 96%;
+    }
+    // car types section 
+    #carTypes .container {
+        width: 96%;
+    }
+    #carTypes .car-img img {
+        max-width: 95%;
+    }
+    #carTypes .car-img {
+        text-align: center;
+    }
+    #carTypes .car-text {
+        text-align: center;
+    }
+    #carTypes .mt-3 {
+        margin-top: 25px;
+    }
+    // make sure section 
+    #makeSure .container {
+        width: 96%;
+    }
+    // widget section
+    #widget {
+        padding: 15px;
+    }
+    #widget .container {
+        width: 96%;
+    }
+    #widget .widget-main {
+        flex-direction: column;
+    }
+    #widget .widget-main .widget-item {
+        width: 100%;
+    }
+    #widget .widget-item.my-4 {
+        margin: 55px 0;
+    }
+    // booking section 
+    #booking .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+    #booking .booking-img span {
+        margin: 0 16px;
+    }
+    #booking .booking-main {
+        justify-content: start;
+    }
+    #booking .booking-img img {
+        width: 110px;
+    }
+    // footer top 
+    #footerTop .container {
+        width: 100%;
+    }
+    // footer bottom 
+    #footer {
+        .container {
+            width: 96%;
+        }
+    }
+}
+
+// ========== 991px ==========
+@media (max-width: 991px) {
+    // header 
+    #header .brand-name .brand-logo-image {
+        width: 105px;
+        margin-left: 15px;
+    }
+    // mega menu 
+    #header .dropdown-content {
+        display: none;
+    }
+    #header .dropdown.d-none {
+        display: none !important;
+    }
+    #header .section-header-center {
+        justify-content: flex-start;
+    }
+    #header {
+        .ul-menuitems {
+            margin-left: 97px;
+        }
+    }
+    // hero section
+    #heroSection .row {
+        align-items: baseline;
+    }
+    #heroSection .container-hero .hero-col-1 {
+        width: 36%;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content h2 {
+        font-size: 22px;
+        margin-right: 28%;
+        margin-top: 0;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content h3 {
+        margin-right: 42%;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content .hero-text-m {
+        margin-right: 37%;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content p {
+        margin-right: 42%;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content .hero-content-img img {
+        height: 57px;
+    }
+    #heroSection .container-hero .hero-col-2 .hero-content .hero-content-img {
+        margin-top: 15px;
+    }
+    // box slider 
+    #boxSlider .container {
+        max-width: 97%;
+    }
+    #boxSlider .star-box {
+        width: 30%;
+    }
+    #boxSlider .d-none {
+        display: none;
+    }
+    #boxSlider .box-title h5 {
+        margin: 25px 0;
+    }
+    // car types section
+    #carTypes .container {
+        width: 100%;
+    }
+    #carTypes .car-img img {
+        max-width: 72%;
+    }
+    #carTypes .mt-3 {
+        margin-top: 16px;
+    }
+    #carTypes .car-text-2 {
+        margin-top: 31px;
+    }
+    #carTypes .car-text-2 {
+        margin-top: 14px;
+    }
+    #carTypes .car-item {
+        margin: 0 1px;
+    }
+    #carTypes .hr-form {
+        width: 96%;
+        margin: 70px auto;
+    }
+    // make sure section 
+    #makeSure .container {
+        width: 100%;
+        padding: 15px;
+    }
+    // Widget section 
+    #widget .container {
+        width: 100%;
+    }
+    #widget .widget-main .widget-item {
+        width: 95%;
+    }
+    // booking section 
+    #booking .container {
+        width: 100%;
+        padding: 10px;
+    }
+    #booking .booking-img img {
+        width: 80px;
+    }
+    // footer top section 
+    #footerTop .container {
+        width: 100%;
+    }
+    #footerTop .footer-main {
+        display: block;
+    }
+    #footerTop .footer-left-main {
+        padding: 65px 0;
+        width: 100%;
+    }
+    #footerTop .footer-middle-main {
+        width: 100%;
+        margin-top: -70px;
+    }
+    #footerTop .footer-right-main .right-list-items {
+        margin-top: 30px;
+    }
+    #footerTop .footer-middle-main {
+        justify-content: center;
+    }
+    #footerTop .footer-middle-main {
+        justify-content: space-evenly;
+    }
+    #footerTop .footer-right-main {
+        display: none;
+    }
+    // footer bottom 
+    #footer {
+        padding: 0;
+    }
+    #footer .container {
+        width: 100%;
+    }
+    #footer .footer-main {
+        flex-direction: column;
+        padding: 15px;
+    }
+    #footer .footer-left {
+        width: 100%;
+    }
+    #footer .footer-right {
+        margin: 30px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+// ========== 767px ==========
+@media (max-width: 767px) {
+    // header section 
+    #header {
+        padding: 0;
+    }
+    #header .container {
+        width: 100%;
+    }
+    #header .ul-menuitems,
+    #header .navbar-btns button:nth-child(1) {
+        display: none;
+    }
+    .btn.btn-header-log-in.mobile {
+        background: transparent;
+        color: #000;
+    }
+    #header .section-header-center {
+        justify-content: space-between;
+    }
+    // hero section  
+    #heroSection {
+        padding: 0;
+        min-height: 0;
+    }
+    #heroSection .container-hero .hero-col-2 {
+        display: none;
+    }
+    #heroSection .container {
+        width: 100%;
+    }
+    #heroSection .container-hero .hero-col-1 {
+        width: 100%;
+    }
+    #heroSection .container-hero .hero-col-1 {
+        margin-left: 0;
+    }
+    // box slider section
+    #boxSlider {
+        padding-top: 0;
+    }
+    #boxSlider .container {
+        width: 100%;
+    }
+    #boxSlider .box-card {
+        flex-direction: column;
+    }
+    #boxSlider .star-box {
+        width: 100%;
+    }
+    #boxSlider .star-box {
+        margin: 0;
+    }
+    // car types section 
+    #carTypes {
+        padding-top: 0;
+    }
+    #carTypes .car-main-div {
+        flex-direction: column;
+    }
+    #carTypes .car-item {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    #carTypes .car-item {
+        width: 100%;
+    }
+    #carTypes .car-img img {
+        max-width: 50%;
+    }
+    #carTypes .car-text h6 {
+        font-size: 15px;
+    }
+    #carTypes .car-text p {
+        font-size: 12px;
+    }
+    #carTypes .hr-form {
+        margin: 0 auto;
+    }
+    #booking,
+    #widget .hr-form {
+        display: none;
+    }
+    #widget {
+        margin: 25px 0;
+    }
+}
+
+// ========== 575px ==========
+// from 414px 👍
+@media (max-width: 575px) {
+    // car types section 
+    #carTypes .car-text p {
+        margin: 0 auto;
+    }
+    #footerTop .footer-middle-main {
+        padding: 0 12px;
+    }
+    #footerTop .footer-middle-main .second-m,
+    #footerTop .footer-middle-main .third-m {
+        margin-top: 107px;
+    }
+    #footer .footer-left .img-main .business-img a img {
+        max-width: 86%;
+        height: 60px;
+    }
+}
+
+// ========== 413px ==========
+@media (max-width: 413px) {
+    // hero section
+    #heroSection .date-time input {
+        margin: 0;
+        padding: 9px;
+    }
+    #heroSection .select-number {
+        width: 30px;
+    }
+    #heroSection [type="radio"]:checked+label,
+    #heroSection [type="radio"]:not(:checked)+label {
+        padding-left: 22px;
+    }
+    // box slider section 
+    #boxSlider .review-text p {
+        padding: 5px;
+    }
+    #boxSlider .box-title p {
+        margin-right: 0;
+    }
+    #boxSlider .progressbar-img img {
+        display: none;
+    }
+    #boxSlider .review-text {
+        margin-bottom: 0;
+    }
+    // footer top section 
+    #footerTop {
+        display: none;
+    }
+    #footer .footer-left .img-main {
+        flex-direction: column;
+    }
+    #footer {
+        .together {
+            margin: 15px 0;
+        }
+    }
+    #footer .footer-left .img-main .business-img a img {
+        max-width: 100%;
+    }
+    // footer bottom 
+    #footer .footer-right .secure {
+        margin-right: 0;
+    }
+}
